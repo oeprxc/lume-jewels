@@ -13,16 +13,16 @@ const Navbar = () => {
 
                     <ul>
                         <a href="Home"><li>HOME</li></a>
-                        <a href="Features"><li>FEATURES</li></a>   
-
-                         <div className="navIcons">
-                            <ShoppingCart size={30} color="white" cursor="Pointer" fontWeight="bolder" />
-                        </div> 
-
+                        <a href="Features"><li>FEATURES</li></a>
                     </ul>
-                
-                            < MenuIcon size={40} color="white" cursor="Pointer" fontWeight="bolder" display="none"/>
-                  
+
+                    <div className="navIcons">
+                        <ShoppingCart size={30} color="white" cursor="Pointer" fontWeight="bolder" />
+
+                        < MenuIcon size={40} color="white" cursor="Pointer" fontWeight="bolder" display="none" />
+                    </div>
+
+
                 </nav>
             </div>
 

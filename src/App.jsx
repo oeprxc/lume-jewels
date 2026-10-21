@@ -1,10 +1,10 @@
 import { useState } from 'react'
-import Navbar from "./Components"
-import Hero from "./Components"
-import FeaturedCard from "./Components"
-import Featured from "./Components"
-import Confirmation from "./Components"
-import Checkout from "./Components"
+import Navbar from "./Components/Navbar"
+import Hero from "./Components/Hero"
+import FeaturedCard from "./Components/Featured"
+import Featured from "./Components/Featured"
+import Confirmation from "./Components/Confirmation"
+import Checkout from "./Components/Checkout"
 import './App.css'
 
 
@@ -12,6 +12,7 @@ const App = () => {
 
   return (
     <>
+    <Navbar/>
     </>
   )
 }

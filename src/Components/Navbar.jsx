@@ -1,6 +1,7 @@
 import "./Navbar.css"
 import logo from "../assets/images/logo.svg"
-import { ShoppingCart } from "lucide-react"
+import { ShoppingCart, MenuIcon } from "lucide-react"
+
 const Navbar = () => {
     return (
         <>
@@ -12,13 +13,16 @@ const Navbar = () => {
 
                     <ul>
                         <a href="Home"><li>HOME</li></a>
-                        <a href="Features"><li>FEATURES</li></a>
+                        <a href="Features"><li>FEATURES</li></a>   
 
-                        <div className="navIcons">
+                         <div className="navIcons">
                             <ShoppingCart size={30} color="white" cursor="Pointer" fontWeight="bolder" />
-                        </div>
-                    </ul>
+                        </div> 
 
+                    </ul>
+                
+                            < MenuIcon size={40} color="white" cursor="Pointer" fontWeight="bolder" display="none"/>
+                  
                 </nav>
             </div>
 

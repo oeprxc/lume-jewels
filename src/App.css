@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+   font-size: var(--font-size);
+    line-height: 1.6;
+    color: var(--text-primary);
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+
+h1,h2,h3,h4 {
+    line-height: 1.2;
+}
+
+:root {
+--text-primary: black;
+--text-secondary: white;
+ --font-size: 1.8rem;
+ --btn-secondary-bg: #84784E;
+ --primary-bg-color: white;
+ --secondary-bg-color: black;
+}

@@ -1,33 +1,55 @@
 #lumeLogo {
-  background-color: var(--secondary-bg-color) !important;
-  height: 60px;
+  height: 55px;
 }
 
-.navItems nav {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+.nav_Icons {
+ display: flex;
+ align-items: center;
 }
 
-ul {
+.cart, .menu {
+  width: 3rem;
+  height: 3rem;
+  stroke-width: 1.5;
+  cursor: pointer;
+  color: var(--text-secondary);
+  gap: 3rem;
+}
+
+.nav_links ul {
   display: flex;
   align-items: center;
-  gap: 5rem;
+  gap: 3rem;
 }
 
 ul li {
   list-style: none;
 }
 
-nav {
-  padding: 2rem;
-  background-color: var(--secondary-bg-color);
-}
-
-a {
+li a {
+  text-decoration: none;
   color: var(--text-secondary);
   font-weight: 700;
-  text-decoration: none;
+  margin-left: 3rem;
   font-size: 2.1rem;
 }
+
+.navItems {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: var(--secondary-bg-color);
+  padding: 1.5rem 0;
+}
+
+.nav_links {
+ display: flex;
+ align-items: center;
+ gap: 5rem;
+}
+
+.menu {
+  display: none;
+}
+
 

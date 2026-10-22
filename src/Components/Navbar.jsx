@@ -6,20 +6,22 @@ const Navbar = () => {
     return (
         <>
             <div className="navItems">
-                <nav>
-                    <div className="logo">
+
+                 <div className="logo">
                         <img src={logo} alt="Lume logo" id="lumeLogo" />
                     </div>
 
+                <nav className="nav_links">
+
                     <ul>
-                        <a href="Home"><li>HOME</li></a>
-                        <a href="Features"><li>FEATURES</li></a>
+                        <li><a href="Home">HOME</a></li>
+                        <li><a href="Features">FEATURES</a></li>
                     </ul>
 
                     <div className="navIcons">
-                        <ShoppingCart size={30} color="white" cursor="Pointer" fontWeight="bolder" />
+                        < ShoppingCart className="cart" />
 
-                        < MenuIcon size={40} color="white" cursor="Pointer" fontWeight="bolder" display="none" />
+                        < MenuIcon className="menu" />
                     </div>
 
 

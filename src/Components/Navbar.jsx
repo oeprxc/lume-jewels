@@ -15,14 +15,14 @@ const Navbar = () => {
                 <nav className="nav_links">
 
                     <ul>
-                        <Link to="/" style={{textDecoration: "none"}}><li>HOME</li></Link>
-                        <Link to="./featured" style={{textDecoration: "none"}}><li>FEATURES</li></Link>
+                        <Link to="/" style={{ textDecoration: "none" }}><li>HOME</li></Link>
+                        <Link to="./featured" style={{ textDecoration: "none" }}><li>FEATURES</li></Link>
                     </ul>
 
                     <div className="navIcons">
 
                         <Link to="/checkout">
-                        < ShoppingCart className="cart" />
+                            < ShoppingCart className="cart" />
                         </Link>
 
                         < MenuIcon className="menu" />

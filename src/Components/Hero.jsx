@@ -23,7 +23,7 @@ const Hero = () => {
 
         <div className="heroBtns">
          <Link to="/checkout" className="hero_Btn" style={{textDecoration: "none"}}>BUY NOW</Link>
-          <Link to="/checkout" className="hero_Btn2">LEARN MORE</Link>
+          <Link to="/featured" className="hero_Btn2">LEARN MORE</Link>
         </div>
        </div>
 

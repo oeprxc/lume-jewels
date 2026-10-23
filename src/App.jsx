@@ -1,8 +1,8 @@
 
-import HomePage from "./Pages/HomePage"
-import FeaturedPage from "./Pages/FeaturedPage"
-import CheckoutPage from "./Pages/CheckoutPage"
-import ConfirmationPage from "./Pages/ConfirmationPage"
+import Home from "./Pages/Home"
+import Featured from "./Pages/Featured"
+import Checkout from "./Pages/Checkout"
+import Confirmation from "./Pages/Confirmation"
 import './App.css'
 import { Routes, Route, Link } from "react-router-dom"
 import Navbar from "./Components/Navbar"
@@ -14,12 +14,12 @@ const App = () => {
       <Navbar />
 
       <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/home" element={<HomePage />} />
-        <Route path="/featured" element={<FeaturedPage />} />
-        <Route path="/checkout" element={<CheckoutPage />} />
-        <Route path="/confirmation" element={<ConfirmationPage />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/featured" element={<Featured />} />
+        <Route path="/checkout" element={<Checkout />} />
+        <Route path="/confirmation" element={<Confirmation />} />
       </Routes>
+
     </>
   )
 }

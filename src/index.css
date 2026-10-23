@@ -9,7 +9,7 @@ body {
    font-size: var(--font-size);
     line-height: 1.6;
     color: var(--text-primary);
-    font-family: "Roboto", sans-serif;;
+    font-family: "Roboto", sans-serif;
 }
 
 html {

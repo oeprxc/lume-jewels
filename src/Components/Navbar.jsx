@@ -16,7 +16,7 @@ const Navbar = () => {
 
                     <ul>
                         <Link to="/" style={{ textDecoration: "none" }}><li>HOME</li></Link>
-                        <Link to="./featured" style={{ textDecoration: "none" }}><li>FEATURES</li></Link>
+                        <Link to="/featured" style={{ textDecoration: "none" }}><li>FEATURES</li></Link>
                     </ul>
 
                     <div className="navIcons">

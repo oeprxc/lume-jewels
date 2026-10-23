@@ -39,13 +39,33 @@
   color: var(--text-secondary) !important;
   background-color: var(--btn-secondary-bg);
   padding: 8px 24px;
-  border-radius: 1rem;
+  border-radius: 0.4rem;
   font-weight: 500;
+  transition: background-color 0.3s ease;
 }
 
- .heroBtns {
-   display: flex;
-   align-items: center;
-   gap: 3rem;
-   margin-top: 3rem;
- }
+.hero_Btn:hover {
+  background-color: #675d3a;
+}
+
+.hero_Btn2 {
+  text-decoration: none;
+  background-color: #1c1a1a;
+  border: 3px solid var(--btn-secondary-bg);
+  color: var(--text-secondary);
+  padding: 8px 24px;
+  border-radius: 0.4rem;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.hero_Btn2:hover {
+  background-color: #675d3a;
+}
+
+.heroBtns {
+  display: flex;
+  align-items: center !important;
+  gap: 3rem;
+  margin-top: 3rem;
+}

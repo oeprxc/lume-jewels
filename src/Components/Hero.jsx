@@ -23,7 +23,7 @@ const Hero = () => {
 
         <div className="heroBtns">
          <Link to="/checkout" className="hero_Btn" style={{textDecoration: "none"}}>BUY NOW</Link>
-          <Link to="/checkout" className="hero_Btn" style={{textDecoration: "none", backgroundColor: "#1C1A1A", border: "3px solid var(--btn-secondary-bg)"}}>LEARN MORE</Link>
+          <Link to="/checkout" className="hero_Btn2">LEARN MORE</Link>
         </div>
        </div>
 

@@ -16,7 +16,11 @@ const FeaturedCard = () => {
                 {featuredCardImages.map((images) => (
                     <div className="cardImages" key={images.id}>
                         <img src={images.image} alt={images.label} className="cardImg" />
-                        <h5 className="cardLabels">{images.label}</h5>
+
+                        <h5 className="cardLabels">
+                            <span className="labelDot"></span>
+                            {images.label}
+                        </h5>
                     </div>
                 ))}
             </div>

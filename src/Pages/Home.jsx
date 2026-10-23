@@ -1,6 +1,7 @@
 import "./Home.css"
 import Hero from "../Components/Hero"
 import FeaturedCard from "../Components/FeaturedCard"
+import Footer from "../Components/Footer"
 
 const Home = () => {
     return (
@@ -11,7 +12,9 @@ const Home = () => {
        <Hero/>
         <FeaturedCard/>
         </div>
-      </div>
+        </div>
+
+        <Footer/>
         </>
     )
 }

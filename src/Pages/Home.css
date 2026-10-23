@@ -1,13 +1,10 @@
-
 .container {
-   display: flex;
-   justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .card {
- width: 60%;
-    height: 100vh;
-    min-height: 100vh;
-    /* border: 1px solid black; */
-    padding: 2rem 0;
+  width: 60%;
+  height: auto;
+  padding: 2rem 0;
 }

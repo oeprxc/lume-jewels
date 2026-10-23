@@ -18,8 +18,7 @@ const Hero = () => {
 
         <div className="heroPara">
         <p className="content">Handpicked earrings, necklace, and rings for</p>
-        <p className="content">everyday moments and the special ones. Find</p>
-        <p className="content">a piece that feels like you.</p>
+        <p className="content">everyday moments and the special ones. Find a piece that feels like you.</p>
        </div>
 
         <div className="heroBtns">

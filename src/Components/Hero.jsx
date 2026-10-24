@@ -6,30 +6,30 @@ const Hero = () => {
     return (
         <>
 
-          <div className="heroCard">
-       
-         <div className="heroImage">
-        <img src={heroImage} alt="Picture of a ring" id="image" />
+            <div className="heroCard">
+
+                <div className="heroImage">
+                    <img src={heroImage} alt="Picture of a ring" id="image" />
+                </div>
+
+                <div className="heroText">
+                    <h1 id="introText">TIMELESS PIECES</h1>
+                    <h2 id="subIntroText">MADE TO BE WORN</h2>
+
+                    <div className="heroPara">
+                        <p className="content">Handpicked earrings, necklaces, and rings for</p>
+                        <p className="content">everyday moments and the special ones. Find a piece that feels like you.</p>
+                    </div>
+
+                    <div className="heroBtns">
+                        <Link to="/checkout" className="hero_Btn" style={{ textDecoration: "none" }}>BUY NOW</Link>
+                        <Link to="/featured" className="hero_Btn2">LEARN MORE</Link>
+                    </div>
+                </div>
+
+
+
             </div>
-
-           <div className="heroText">
-        <h1 id="introText">TIMELESS PIECES</h1>
-       <h2 id="subIntroText">MADE TO BE WORN</h2>
-
-        <div className="heroPara">
-        <p className="content">Handpicked earrings, necklace, and rings for</p>
-        <p className="content">everyday moments and the special ones. Find a piece that feels like you.</p>
-       </div>
-
-        <div className="heroBtns">
-         <Link to="/checkout" className="hero_Btn" style={{textDecoration: "none"}}>BUY NOW</Link>
-          <Link to="/featured" className="hero_Btn2">LEARN MORE</Link>
-        </div>
-       </div>
-
-      
-
-        </div>
 
 
         </>

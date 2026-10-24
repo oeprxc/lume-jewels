@@ -4,14 +4,12 @@ import FooterLogo from "../assets/images/logo.svg"
 const Footer = () => {
     return (
         <>
-            <div className="footer">
-                <div className="footerLogo">
-                    <img src={FooterLogo} alt="Lume Jewels logo" id="footer_Logo" />
-                    <div className="footerText">
-                        <h4>TIMELESS PIECES</h4>
-                    </div>
-                </div>
-            </div>
+            <footer className="footer">
+                <img src={FooterLogo} alt="Lume Jewels logo" id="footer_Logo" />
+                <p className="footerText">
+                    TIMELESS PIECES
+                </p>
+            </footer>
         </>
     )
 }

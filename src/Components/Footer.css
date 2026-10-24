@@ -1,21 +1,18 @@
-.footerLogo {
+.footer {
   width: 100%;
   background-color: var(--secondary-bg-color);
   color: white;
   display: flex;
   align-items: center;
   justify-content: space-around;
-  padding: 0.5rem 0;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  padding: 1.5rem 0;
 }
 
 #footer_Logo {
-  height: 35px;
+  height: 3.5rem;
 }
 
-.footerText h4 {
+.footerText {
   font-size: 1.5rem;
+  font-weight: 700;
 }

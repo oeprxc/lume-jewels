@@ -13,8 +13,6 @@ const Home = () => {
         <FeaturedCard/>
         </div>
         </div>
-
-        <Footer/>
         </>
     )
 }

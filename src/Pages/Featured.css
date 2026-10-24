@@ -1,0 +1,12 @@
+.featuredContentImage {
+    width: 550px;
+    height: 550px;
+    object-fit: cover;
+    display: block;
+    border-radius: 50%;
+}
+
+.featuredDot {
+    list-style-type: disc;
+    color: black !important;
+}

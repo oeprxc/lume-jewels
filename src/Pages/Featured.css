@@ -1,12 +1,61 @@
 .featuredContentImage {
-    width: 550px;
-    height: 550px;
-    object-fit: cover;
-    display: block;
-    border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  flex-shrink: 0;
+  border-radius: 50%;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 .featuredDot {
-    list-style-type: disc;
-    color: black !important;
+  list-style-type: disc;
+  color: black !important;
+  margin-bottom: 0.8rem;
+  margin-left: 2rem;
+  font-size: 1.7rem;
+}
+
+.featuredContainer {
+  width: 100%;
+}
+
+.featuredContentCard {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6rem;
+  padding: 8rem 2rem 5rem;
+}
+
+.featuredContentCard:nth-child(even) {
+  flex-direction: row-reverse;
+  background-color: var(--btn-secondary-bg);
+}
+
+.featuredContentText {
+  max-width: 55rem;
+}
+
+.featuredContentText h5 {
+  display: inline-block;
+  background-color: black;
+  color: var(--text-secondary);
+  padding: 0.8rem 1.6rem;
+  margin-bottom: 1.6rem;
+  font-size: 1.5rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.featuredContentCard:nth-child(even) {
+    left: auto;
+    right: 0;
+}
+
+.featuredContentText p {
+  font-size: 1.7rem;
+  line-height: 1.6;
+  margin-bottom: 1.6rem;
 }

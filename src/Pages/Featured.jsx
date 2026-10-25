@@ -18,9 +18,10 @@ const Featured = () => {
             <div className="featuredContainer">
                 {featuredSection.map((featuredContent) => (
                     <div className="featuredContentCard" key={featuredContent.id}>
+                       
                         <img src={featuredContent.featuredImage} alt={featuredContent.featuredLabel} className="featuredContentImage" />
                         <div className="featuredContentText">
-                        <h5>{featuredContent.featuredLabel}</h5>
+                         <h5> <span className="labelDot"></span>{featuredContent.featuredLabel}</h5>
                         <p>{featuredContent.featuredText}</p>
                         <ul>
                             <li className="featuredDot">{featuredContent.bulletPoint1}</li>

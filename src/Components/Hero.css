@@ -63,7 +63,7 @@
 }
 
 .hero_Btn:active {
-  transform: scale(0.95);
+  transform: scale(0.95) translateY(2px);
 }
 
 .hero_Btn2 {
@@ -86,7 +86,7 @@
 }
 
 .hero_Btn2:active {
-  transform: scale(0.95);
+  transform: scale(0.95) translateY(2px);
 }
 
 .heroBtns {

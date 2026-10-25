@@ -33,6 +33,13 @@
   background-color: var(--btn-secondary-bg);
 }
 
+.featuredContentCard:nth-child(even) h5 {
+  left: auto;
+  right: 0;
+  background-color: white;
+  color: black;
+}
+
 .featuredContentText {
   max-width: 55rem;
 }
@@ -47,11 +54,6 @@
   position: absolute;
   top: 0;
   left: 0;
-}
-
-.featuredContentCard:nth-child(even) {
-    left: auto;
-    right: 0;
 }
 
 .featuredContentText p {

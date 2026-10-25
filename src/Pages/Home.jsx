@@ -5,13 +5,13 @@ import FeaturedCard from "../Components/FeaturedCard"
 const Home = () => {
     return (
         <>
-      
-      <div className="container">
-        <div className="card">
-       <Hero/>
-        <FeaturedCard/>
-        </div>
-        </div>
+
+            <div className="container">
+                <div className="card">
+                    <Hero />
+                    <FeaturedCard />
+                </div>
+            </div>
         </>
     )
 }

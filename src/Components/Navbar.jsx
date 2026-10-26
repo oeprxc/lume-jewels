@@ -9,7 +9,10 @@ const Navbar = () => {
             <div className="navItems">
 
                 <div className="logo">
-                    <img src={logo} alt="Lume logo" id="lumeLogo" />
+
+                    <Link to="/">
+                        <img src={logo} alt="Lume logo" id="lumeLogo" />
+                    </Link>
                 </div>
 
                 <nav className="nav_links">

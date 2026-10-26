@@ -40,9 +40,9 @@ const Checkout = () => {
 
                             <p>Join our mailing list <input type="checkbox" name="checkbox" id="checkbox" /></p>
 
-                            <div className="checkOutBtn">
-                                <Link to="/confirmation" className="purchaseBtn">PURCHASE</Link>
-                            </div>
+
+                            <button type="submit" className="purchaseBtn">PURCHASE</button>
+
                         </form>
                     </div>
                 </div>

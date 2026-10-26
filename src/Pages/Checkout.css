@@ -11,8 +11,8 @@ label {
 }
 
 .checkOutCard {
-  width: 30%;
-  height: 50vh;
+  width: 20%;
+  height: 40vh;
   padding: 2rem;
   box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.12);
   border-radius: 0.4rem;
@@ -28,16 +28,64 @@ label {
 
 input {
   padding: 1rem;
+  border: none;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.12);
 }
 
 #purchaseBtn {
   background-color: var(--btn-secondary-bg);
   color: var(--text-secondary);
-  padding: 8px 24px;
+  padding: 10px 24px;
   cursor: pointer;
-  width: 43%;
+  width: 100%;
   border: none;
-  font-weight: 600;
-  margin-top: 2.3rem;
+   font-weight: 500;
   box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.12);
+  transition: 0.3s;
+  margin-top: 1.1rem;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.12);
+}
+
+#purchaseBtn:hover {
+   background-color: #675d3a;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.18);
+}
+
+#purchaseBtn:active {
+   transform: scale(0.95) translateY(2px);
+}
+
+.expiryCvvRow {
+  display: flex;
+  gap: 1.6rem;
+}
+
+.expiryGroup {
+  flex: 2;
+  margin-top: 1rem;
+}
+
+.cvvGroup {
+  flex: 1;
+  margin-top: 1rem;
+}
+
+.expiryCvvRow input {
+  width: 100%;
+}
+
+.cardGroup input {
+  width: 100%;
+}
+
+.checkOutFormContainer p {
+  text-align: right;
+  margin-top: 1.1rem;
+}
+#checkbox {
+  cursor: pointer;
+}
+
+.cardGroup {
+  margin-top: 1.1rem;
 }

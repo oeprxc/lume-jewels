@@ -1,15 +1,29 @@
 import "./Checkout.css"
 import { useState } from "react"
-import { Link } from "react-router-dom"
+import { useNavigate } from "react-router-dom"
 
 const Checkout = () => {
 
     const [number, setNumber] = useState("")
     const [expiryDate, setExpiryDate] = useState("")
     const [cvv, setCvv] = useState("")
+    const [errorMessage, setErrorMessage] = useState("")
+
+    const navigate = useNavigate()
 
     const handleSubmit = (event) => {
         event.preventDefault()
+
+        const userCardNumber = number.trim()
+        const userCardEpiryNumber = expiryDate.trim()
+        const userCvv = cvv.trim()
+
+        if (userCardNumber === "" || userCardEpiryNumber === "" || userCvv === "") {
+            setErrorMessage("Please all fields are required")
+            return
+        }
+        setErrorMessage("")
+        navigate("/confirmation")
     }
 
     return (
@@ -40,7 +54,7 @@ const Checkout = () => {
 
                             <p>Join our mailing list <input type="checkbox" name="checkbox" id="checkbox" /></p>
 
-
+                            <p style={{ textAlign: "center", color: "red" }}>{errorMessage}</p>
                             <button type="submit" className="purchaseBtn">PURCHASE</button>
 
                         </form>

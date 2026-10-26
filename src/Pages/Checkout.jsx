@@ -22,28 +22,27 @@ const Checkout = () => {
                         <form onSubmit={handleSubmit}>
 
                             <div className="cardGroup">
-                            <label htmlFor="cardNumber">Card Number</label>
-                            <input type="text" name="cardNumber" id="cardNumber" placeholder="xxxxxx-xxx-xxxxxxx-x" value={number} onChange={event => setNumber(event.target.value)} />
-                             </div>
-
-                             <div className="expiryCvvRow">
-                                <div className="expiryGroup">
-                            <label htmlFor="expiryDate">Expiry Date</label>
-                            <input type="text" name="expiryDate" id="expiryDate" placeholder="MM/YY" value={expiryDate} onChange={event => setExpiryDate(event.target.value)} />
+                                <label htmlFor="cardNumber">Card Number</label>
+                                <input type="text" name="cardNumber" id="cardNumber" placeholder="xxxxxx-xxx-xxxxxxx-x" value={number} onChange={event => setNumber(event.target.value)} />
                             </div>
 
-                           <div className="cvvGroup">
-                            <label htmlFor="cvv">CVV</label>
-                            <input type="text" name="cvv" id="cvv" placeholder="123" value={cvv} onChange={event => setCvv(event.target.value)} />
-                             </div>
+                            <div className="expiryCvvRow">
+                                <div className="expiryGroup">
+                                    <label htmlFor="expiryDate">Expiry Date</label>
+                                    <input type="text" name="expiryDate" id="expiryDate" placeholder="MM/YY" value={expiryDate} onChange={event => setExpiryDate(event.target.value)} />
+                                </div>
+
+                                <div className="cvvGroup">
+                                    <label htmlFor="cvv">CVV</label>
+                                    <input type="text" name="cvv" id="cvv" placeholder="123" value={cvv} onChange={event => setCvv(event.target.value)} />
+                                </div>
                             </div>
 
                             <p>Join our mailing list <input type="checkbox" name="checkbox" id="checkbox" /></p>
-                            {/* <button id="purchaseBtn">PURCHASE</button> */}
 
                             <div className="checkOutBtn">
-                    <Link to="/confirmation" className="purchaseBtn" style={{textDecoration:"none"}}>PURCHASE</Link>
-                    </div>
+                                <Link to="/confirmation" className="purchaseBtn">PURCHASE</Link>
+                            </div>
                         </form>
                     </div>
                 </div>

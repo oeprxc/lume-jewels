@@ -1,5 +1,6 @@
 import "./Checkout.css"
 import { useState } from "react"
+import { Link } from "react-router-dom"
 
 const Checkout = () => {
 
@@ -38,8 +39,11 @@ const Checkout = () => {
                             </div>
 
                             <p>Join our mailing list <input type="checkbox" name="checkbox" id="checkbox" /></p>
+                            {/* <button id="purchaseBtn">PURCHASE</button> */}
 
-                            <button id="purchaseBtn">PURCHASE</button>
+                            <div className="checkOutBtn">
+                    <Link to="/confirmation" className="purchaseBtn" style={{textDecoration:"none"}}>PURCHASE</Link>
+                    </div>
                         </form>
                     </div>
                 </div>

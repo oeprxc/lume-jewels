@@ -31,13 +31,17 @@ const Checkout = () => {
 
             <div className="checkOutContainer">
                 <div className="checkOutCard">
+
                     <h4>PAYMENT DETAILS</h4>
+
+                    <div className="notice"><b>Do not use a real card!</b> Use a practice card like<span style={{ color: "red" }}> 4242 4242 4242 4242</span></div>
+
                     <div className="checkOutFormContainer">
                         <form onSubmit={handleSubmit}>
 
                             <div className="cardGroup">
                                 <label htmlFor="cardNumber">Card Number</label>
-                                <input type="text" name="cardNumber" id="cardNumber" placeholder="xxxxxx-xxx-xxxxxxx-x" value={number} onChange={event => setNumber(event.target.value)} />
+                                <input type="text" name="cardNumber" id="cardNumber" placeholder="xxxx-xxxx-xxxx-xxxx" value={number} onChange={event => setNumber(event.target.value)} />
                             </div>
 
                             <div className="expiryCvvRow">

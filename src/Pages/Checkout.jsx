@@ -4,7 +4,7 @@ import { useState } from "react"
 const Checkout = () => {
 
     const [number, setNumber] = useState("")
-    const [epiryDate, setEpiryDate] = useState("")
+    const [expiryDate, setExpiryDate] = useState("")
     const [cvv, setCvv] = useState("")
 
     const handleSubmit = (event) => {
@@ -20,10 +20,10 @@ const Checkout = () => {
                     <div className="checkOutFormContainer">
                         <form onSubmit={handleSubmit}>
                             <label htmlFor="cardNumber">Card Number</label>
-                            <input type="text" name="number" id="number" placeholder="xxxxxx-xxx-xxxxxxx-x" value={number} onChange={event => setNumber(event.target.value)} />
+                            <input type="text" name="cardNumber" id="cardNumber" placeholder="xxxxxx-xxx-xxxxxxx-x" value={number} onChange={event => setNumber(event.target.value)} />
 
-                            <label htmlFor="epiryDate">Epiry Date</label>
-                            <input type="text" name="expiryDate" id="expiryDate" placeholder="04/22" value={epiryDate} onChange={event => setEpiryDate(event.target.value)} />
+                            <label htmlFor="expiryDate">Epiry Date</label>
+                            <input type="text" name="expiryDate" id="expiryDate" placeholder="04/22" value={expiryDate} onChange={event => setExpiryDate(event.target.value)} />
 
                             <label htmlFor="cvv">CVV</label>
                             <input type="text" name="cvv" id="cvv" placeholder="123" value={cvv} onChange={event => setCvv(event.target.value)} />

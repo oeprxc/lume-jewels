@@ -1,6 +1,7 @@
 import "./Checkout.css"
 import { useState } from "react"
 import { useNavigate } from "react-router-dom"
+import { Info } from "lucide-react"
 
 const Checkout = () => {
 
@@ -8,6 +9,8 @@ const Checkout = () => {
     const [expiryDate, setExpiryDate] = useState("")
     const [cvv, setCvv] = useState("")
     const [errorMessage, setErrorMessage] = useState("")
+
+    const [showTooltip, setShowTooltip] = useState(false)
 
     const navigate = useNavigate()
 
@@ -51,7 +54,20 @@ const Checkout = () => {
                                 </div>
 
                                 <div className="cvvGroup">
-                                    <label htmlFor="cvv">CVV</label>
+                                    <div className="cvvLabelRow">
+                                        <label htmlFor="cvv">CVV</label>
+
+                                        <div className="tooltipWrapper" onMouseEnter={() => setShowTooltip(true)}
+                                            onMouseLeave={() => setShowTooltip(false)}>
+
+                                            <Info className="infoIcon" />
+                                            <div className={showTooltip ? "tooltip showTooltip" : "tooltip"}>
+                                                <b>What's a CVV?</b>
+                                                <p>The 3-digit security code on the back of your card.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
                                     <input type="text" name="cvv" id="cvv" placeholder="123" value={cvv} onChange={event => setCvv(event.target.value)} />
                                 </div>
                             </div>

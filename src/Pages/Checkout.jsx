@@ -15,10 +15,10 @@ const Checkout = () => {
         event.preventDefault()
 
         const userCardNumber = number.trim()
-        const userCardEpiryNumber = expiryDate.trim()
+        const userCardExpiryNumber = expiryDate.trim()
         const userCvv = cvv.trim()
 
-        if (userCardNumber === "" || userCardEpiryNumber === "" || userCvv === "") {
+        if (userCardNumber === "" || userCardExpiryNumber === "" || userCvv === "") {
             setErrorMessage("Please all fields are required")
             return
         }

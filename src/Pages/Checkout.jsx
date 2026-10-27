@@ -74,7 +74,7 @@ const Checkout = () => {
 
                             <p>Join our mailing list <input type="checkbox" name="checkbox" id="checkbox" /></p>
 
-                            <p style={{ textAlign: "center", color: "red" }}>{errorMessage}</p>
+                            <p style={{ textAlign: "center", color: "red", fontSize: "1.5rem" }}>{errorMessage}</p>
                             <button type="submit" className="purchaseBtn">PURCHASE</button>
 
                         </form>

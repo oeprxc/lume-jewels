@@ -22,7 +22,7 @@ const Checkout = () => {
         const userCvv = cvv.trim()
 
         if (userCardNumber === "" || userCardExpiryNumber === "" || userCvv === "") {
-            setErrorMessage("Please all fields are required")
+            setErrorMessage("All fields are required")
             return
         }
         setErrorMessage("")
@@ -72,7 +72,9 @@ const Checkout = () => {
                                 </div>
                             </div>
 
-                            <p>Join our mailing list <input type="checkbox" name="checkbox" id="checkbox" /></p>
+                            <label htmlFor="checkbox">
+                                <p>Join our mailing list <input type="checkbox" name="checkbox" id="checkbox" /></p>
+                            </label>
 
                             <p style={{ textAlign: "center", color: "red", fontSize: "1.5rem" }}>{errorMessage}</p>
                             <button type="submit" className="purchaseBtn">PURCHASE</button>

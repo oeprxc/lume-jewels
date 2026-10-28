@@ -3,6 +3,9 @@ import "./Confirmation.css"
 const Confirmation = () => {
     return (
         <>
+    <div className="confirmationContainer">
+        
+    </div>
         </>
     )
 }

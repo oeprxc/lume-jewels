@@ -4,7 +4,7 @@
 
 .navIcons {
   display: flex;
-  align-items: center;
+  align-items: flex-start !important;
   gap: 3rem;
 }
 
@@ -41,12 +41,6 @@ li {
   justify-content: space-around;
   background-color: var(--secondary-bg-color);
   padding: 1.5rem 0;
-  position: sticky;
-  top: 0;
-  right: 0;
-  left: 0;
-  width: 100%;
-  z-index: 100;
 }
 
 .nav_links {

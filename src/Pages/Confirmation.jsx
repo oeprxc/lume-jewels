@@ -6,7 +6,7 @@ const Confirmation = () => {
         <>
             <div className="confirmationContainer">
                 <div className="ImageCard">
-                    <img src={backgroundImage} alt="Map showing your" className="mapImage" />
+                    <img src={backgroundImage} alt="Map showing your package's delivery route" className="mapImage" />
                     <h2 className="confirmationText">Your package is on the way</h2>
                 </div>
 

@@ -25,6 +25,42 @@ const Checkout = () => {
             setErrorMessage("All fields are required")
             return
         }
+
+        const cleanedNumber = userCardNumber.replace(/\s/g, "").replace(/-/g, "")
+
+        if (!/^\d+$/.test(cleanedNumber)) {
+            setErrorMessage("Card number must contain only numbers")
+            return
+        }
+
+        if (!/^(0[1-9]|1[0-2])\/\d{2}$/.test(userCardExpiryNumber)) {
+            setErrorMessage("Expiry date must be in MM/YY format")
+            return
+        }
+
+        const [month, year] = userCardExpiryNumber.split("/")
+        const currentYear = new Date().getFullYear() % 100
+        const currentMonth = new Date().getMonth() + 1
+
+        const inputMonth = parseInt(month, 10)
+        const inputYear = parseInt(year, 10)
+
+        if (inputYear < currentYear || (inputYear === currentYear && inputMonth < currentMonth)) {
+            setErrorMessage("Card has expired")
+            return
+        }
+
+
+        if (!/^\d+$/.test(userCvv)) {
+            setErrorMessage("CVV must contain only numbers")
+            return
+        }
+
+        if (userCvv.length !== 3) {
+            setErrorMessage("CVV must be 3 digits")
+            return
+        }
+
         setErrorMessage("")
         navigate("/confirmation")
     }

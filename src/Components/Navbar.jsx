@@ -30,12 +30,9 @@ const Navbar = () => {
 
                         < MenuIcon className="menu" />
                     </div>
-
-
                 </nav>
             </div>
-
-
+        
 
         </>
     )

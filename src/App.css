@@ -4,7 +4,7 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  padding-top: 7rem;
+  padding-top: 9rem;
 }
 
 .appMain {
@@ -216,10 +216,6 @@
   .navIcons {
     display: flex;
     gap: 2rem !important;
-  }
-
-  .heroCard {
-    margin-top: 2rem;
   }
 
   .overLay {

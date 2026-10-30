@@ -32,9 +32,14 @@ const Navbar = () => {
         menuIcon = <MenuIcon className="menu" onClick={handleClick} />
     }
 
+    let overLay = ""
+    if(click) {
+        overLay = <div className="overLay" onClick={() => {setClick(false)}}></div>
+    }
+
     return (
         <>
-
+            {overLay}
             <div className="navItems">
 
                 <div className="logo">
@@ -47,7 +52,7 @@ const Navbar = () => {
                 <nav className="nav_links">
 
                     <ul className={menuClass}>
-                        
+
                         <Link to="/" style={{ textDecoration: "none" }} onClick={() => { setClick(false) }}><li>HOME</li></Link>
 
                         <Link to="/featured" style={{ textDecoration: "none" }} onClick={() => { setClick(false) }}><li>FEATURES</li></Link>

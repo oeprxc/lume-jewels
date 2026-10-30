@@ -4,13 +4,62 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  padding-top: 9rem;
 }
 
 .appMain {
   flex: 1;
 }
-@media only screen and (max-width: 768px) {
-  /* * {
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  .menu {
+    display: inline !important;
+  }
+
+  .card {
+    width: 100%;
+    height: auto;
+    padding: 2rem;
+  }
+
+  .featuredCardContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin-top: 1.2rem;
+  }
+
+  .heroCard {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #image {
+    width: 100% !important;
+    display: block;
+    object-fit: cover;
+    margin: 0;
+  }
+
+  .heroBtns {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .heroPara {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .heroText {
+    padding: 2rem 0;
+  }
+}
+
+@media only screen and (min-width: 390px) and (max-width: 600px) {
+   /* * {
     border: 1px solid red;
   } */
 }

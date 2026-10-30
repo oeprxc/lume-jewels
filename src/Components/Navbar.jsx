@@ -10,27 +10,27 @@ const Navbar = () => {
     const [click, setClick] = useState(false)
 
     const handleClick = () => {
-      if (click) {
-        setClick(false)
-      } else{
-        setClick(true)
-      }
+        if (click) {
+            setClick(false)
+        } else {
+            setClick(true)
+        }
     }
 
-     let menuClass = ""
-        if (click) {
-            menuClass = "active"
-        } else {
-            menuClass = ""
-        }
+    let menuClass = ""
+    if (click) {
+        menuClass = "active"
+    } else {
+        menuClass = ""
+    }
 
-        let menuIcon = ""
-        if(click) {
-            menuIcon = <X className="menu" onClick={handleClick}/>
-        } else {
-            menuClass= ""
-            menuIcon = <MenuIcon className="menu" onClick={handleClick}/>
-        }
+    let menuIcon = ""
+    if (click) {
+        menuIcon = <X className="menu" onClick={handleClick} />
+    } else {
+        menuClass = ""
+        menuIcon = <MenuIcon className="menu" onClick={handleClick} />
+    }
 
     return (
         <>
@@ -47,8 +47,10 @@ const Navbar = () => {
                 <nav className="nav_links">
 
                     <ul className={menuClass}>
-                        <Link to="/" style={{ textDecoration: "none" }}><li>HOME</li></Link>
-                        <Link to="/featured" style={{ textDecoration: "none" }}><li>FEATURES</li></Link>
+                        
+                        <Link to="/" style={{ textDecoration: "none" }} onClick={() => { setClick(false) }}><li>HOME</li></Link>
+
+                        <Link to="/featured" style={{ textDecoration: "none" }} onClick={() => { setClick(false) }}><li>FEATURES</li></Link>
                     </ul>
 
                     <div className="navIcons">

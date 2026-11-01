@@ -106,7 +106,6 @@ Images
 
 - Careful delivery card image by Alleksana on Pexels
 
-- Map
-  ![Map](screenshots/map.png)
+- Confirmation Map background image by Google Maps / Google
 
 Designed and built by **Precious Emmanuel**

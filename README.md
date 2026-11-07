@@ -6,7 +6,7 @@ Lume Jewels is a practice project. It was my first Figma design project, and I b
 
 ## Live demo
 
-https://oeprxc.github.io/lume-jewels/
+https://oeprecious.github.io/lume-jewels/
 
 ## About this project
 
@@ -69,7 +69,7 @@ You need [Node.js](https://nodejs.org) installed.
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/oeprxc/lume-jewels.git
+git clone https://github.com/oeprecious/lume-jewels.git
 
 # 2. Go into the project folder
 cd lume-jewels
